@@ -10,6 +10,8 @@ public class Main {
         double cdPrice = 5.25;
         double totalPrice;
 
+        int formPayment;
+
         System.out.println("Добро пожаловать в магазин для геймеров");
         System.out.println("---------------------------------------");
         System.out.println("Сегодня у нас распродажа игровых дисков:");
@@ -37,7 +39,23 @@ public class Main {
 
         }
 
-        System.out.println("Выберите форму оплаты: наличные, карта, курьеру при получении");
+        System.out.println("Выберите форму оплаты: наличные(1), карта(2), курьеру при получении(3) ");
+        formPayment = keyboard.nextInt();
+
+        switch (formPayment) {
+
+            case 1:
+                System.out.println("Вы выбрали форму оплаты: наличными");
+                break;
+
+            case 2:
+                System.out.println("Вы выбрали форму оплаты: картой");
+                break;
+
+            case 3:
+                System.out.println("Вы выбрали форму оплаты: при получении курьеру");
+
+        }
 
 
 
