@@ -8,7 +8,7 @@ public class Main {
         char delivery;
         double deliveryPrice = 25.00;
         double cdPrice = 5.25;
-        double totalPrice;
+        double totalPrice = 0;
 
         int formPayment;
 
@@ -56,6 +56,9 @@ public class Main {
                 System.out.println("Вы выбрали форму оплаты: при получении курьеру");
 
         }
+
+        System.out.println("Вы выбрали форму оплаты: " + formPayment);
+        System.out.println("К оплате: " + totalPrice + " рублей");
 
 
 
